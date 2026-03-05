@@ -192,6 +192,120 @@ button:hover {
   display: none;
 }
 
+/* Header layout with user menu */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-content {
+  flex-grow: 1;
+}
+
+.user-menu {
+  position: relative;
+  margin-top: 10px;
+}
+
+.user-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.modal-content h3 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group input {
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #3949ab;
+}
+
+#login-error {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#logout-form p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 footer {
   text-align: center;
   margin-top: 30px;
